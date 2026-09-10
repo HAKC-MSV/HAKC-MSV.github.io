@@ -1,6 +1,6 @@
 # HAKC + MSV
 
-<img src="assets/hakc-logo.png" alt="HAKC + MSV Logo" width="400">
+![HAKC + MSV Logo](assets/hakc-logo.png)
 
 Hardware-Assisted Kernel Compartmentalization and
 Memory Safety Verification
