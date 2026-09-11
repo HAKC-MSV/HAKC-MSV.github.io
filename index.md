@@ -43,7 +43,7 @@ the next version (see [Roadmap](roadmap.md)).
 
 ## Getting Started
 
-See the [README](https://github.com/HAKC-MSV/HAKC/README.md) in the high-level HAKC repository.
+See the [README](https://github.com/HAKC-MSV/HAKC/blob/main/README.md) in the high-level HAKC repository.
 
 ## Publications
 
