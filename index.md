@@ -30,6 +30,10 @@ which improves performance because the pointers do not require compartment
 transfers or validation checks. MSV performs the analysis to identify safe
 pointers that can be removed from HAKC tracking.
 
+Currently, HAKC is reliant on extensions to LLVM (see [HAKC LLVM](https://github.com/HAKC-MSV/llvm-project)).
+However, we are planning to move over to a source-to-source compiler in 
+the next version (see [Roadmap](ROADMAP.md)).
+
 ## Projects
 
 * [HAKC](https://github.com/HAKC-MSV/HAKC)
@@ -44,4 +48,16 @@ See the [README](https://github.com/HAKC-MSV/HAKC) in the high-level HAKC reposi
 ## Publications
 
 See [Publications](publications.md).
+
+## Contributing
+
+See [Contributing](CONTRIBUTING.md)
+
+## Security
+
+See [Security](SECURITY.md)
+
+## Code of Conduct
+
+See [Code of Conduct](CODE_OF_CONDUCT.md)
 
