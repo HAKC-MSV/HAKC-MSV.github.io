@@ -1,22 +1,5 @@
 # Security Policy
 
-## Supported Versions
-
-HAKC is currently in active development. Security updates and support are provided for:
-
-- **LLVM**: Based on a custom fork tracking LLVM development
-- **Linux Kernel**: Tracks Long Term Support (LTS) kernel versions
-- **HAKC**: Current development branch and recent tagged releases
-
-| Component | Version/Branch | Supported |
-|-----------|----------------|-----------|
-| HAKC | Current `main` branch | ✅ Yes |
-| HAKC | Tagged releases | ✅ Yes |
-| LLVM | Custom fork | ✅ Yes |
-| Linux Kernel | LTS-based | ✅ Yes |
-
-Security patches are provided for the current development state and will be applied to stable releases as they are established.
-
 ## Reporting a Vulnerability
 
 **IMPORTANT: Do NOT report security vulnerabilities through public GitHub issues.**
@@ -25,7 +8,7 @@ If you discover a security vulnerability in HAKC, please report it privately to 
 
 ### How to Report
 
-**Email:** derrick.mckee@ll.mit.edu
+**Email:** hakc@ll.mit.edu
 
 **Subject Line:** `[HAKC SECURITY] <brief description>`
 
@@ -48,82 +31,6 @@ Please provide as much information as possible to help us understand and reprodu
 6. **Suggested Fix**: If you have ideas for remediation, please share them
 7. **Credit**: How you would like to be credited when the vulnerability is disclosed (or if you prefer to remain anonymous)
 
-### What to Expect
-
-#### Response Timeline
-
-1. **Acknowledgment**: Within **5 business days** of your report
-   - We'll confirm receipt and provide initial assessment
-   
-2. **Initial Assessment**: Within **10 business days**
-   - Confirm whether the issue is a vulnerability
-   - Assess severity using CVSS or similar framework
-   - Provide initial timeline estimate
-
-3. **Regular Updates**: At least every **14 days**
-   - Progress updates on fix development and testing
-   
-4. **Resolution Timeline** (depends on severity):
-   - **Critical**: Expedited fix (target **30 days**)
-   - **High**: Target **60 days**
-   - **Medium**: Target **90 days**
-   - **Low**: Target **90 days**
-
-These are target timelines. Complex issues may require more time, and we'll keep you informed of any changes.
-
-#### Coordinated Disclosure
-
-We follow responsible disclosure practices:
-
-- Vulnerabilities and fixes are developed **privately** until ready for release
-- **Public disclosure** occurs after a fix is available and users have time to update (typically **90 days** from report)
-- We coordinate disclosure timing with you, the reporter
-- **Credit** is given to reporters in security advisories (unless anonymity is requested)
-- We may request a **CVE ID** for significant vulnerabilities
-
-## Vulnerability Handling Process
-
-When you report a security issue, here's what happens:
-
-### 1. Triage
-- Confirm the vulnerability
-- Assess severity and impact using CVSS or similar metrics
-- Determine affected versions and components
-
-### 2. Development
-- Create a fix in a private repository branch
-- Review the fix thoroughly
-- Consider backwards compatibility and deployment concerns
-
-### 3. Testing
-- Test the fix across supported configurations
-- Verify the fix resolves the issue without introducing regressions
-- Test on multiple architectures and kernel versions
-
-### 4. CVE Assignment
-- Request a CVE identifier for significant vulnerabilities
-- Prepare CVE description and metadata
-
-### 5. Release Preparation
-- Prepare security advisory
-- Create patch or updated release
-- Plan coordinated disclosure timeline
-
-### 6. Disclosure
-- Publish GitHub Security Advisory
-- Release patch/update
-- Notify users through available channels
-- Coordinate public disclosure with reporter
-
-## Security Update Distribution
-
-Security fixes and advisories will be distributed through:
-
-- **GitHub Security Advisories**: Primary mechanism for security notifications
-- **Git Tags**: Security releases tagged appropriately (e.g., `v1.2.3-security`)
-- **Release Notes**: Security fixes highlighted in release notes
-- **Mailing List**: (To be established for project updates and security notifications)
-
 ## Scope
 
 ### In Scope
@@ -145,57 +52,6 @@ Security vulnerabilities in HAKC-specific code:
 
 If you're unsure whether an issue is in scope, please report it and we'll make the determination.
 
-## Security Best Practices
-
-### For Users
-
-When using HAKC in your projects:
-
-1. **Keep Updated**: Use the latest HAKC code and LTS kernel versions
-2. **Test Thoroughly**: Validate compartmentalization policies in test environments before production
-3. **Monitor Advisories**: Subscribe to security advisories for HAKC, LLVM, and Linux kernel
-4. **Review Policies**: Regularly review and audit your compartmentalization policies
-5. **Report Issues**: If you discover potential vulnerabilities, report them promptly
-
-### For Contributors
-
-When contributing code:
-
-1. **Secure Coding**: Follow secure coding practices
-2. **Avoid Vulnerabilities**: Be mindful of common vulnerabilities (buffer overflows, injection attacks, etc.)
-3. **Security Impact**: Consider security implications of compartmentalization policy changes
-4. **Review Carefully**: Security-sensitive changes receive extra scrutiny during review
-5. **Test Security**: Include security-focused test cases where appropriate
-
-### Compartmentalization Security
-
-HAKC itself is a security mechanism. When designing and implementing compartmentalization:
-
-- **Principle of Least Privilege**: Compartments should have minimal necessary permissions
-- **Defense in Depth**: Compartmentalization is one layer; use in conjunction with other security measures
-- **Test Attack Scenarios**: Test that compartmentalization boundaries hold under attack
-- **Monitor Runtime**: Consider runtime monitoring and anomaly detection
-
-## Security Considerations
-
-### HAKC Architecture
-
-HAKC operates at multiple levels:
-
-1. **Compile-Time**: LLVM passes transform code
-2. **Build-Time**: Policy server makes compartmentalization decisions  
-3. **Runtime**: Linux kernel enforces compartment boundaries
-
-Security issues can arise at any of these levels, so reports concerning any component are welcome.
-
-### Trust Model
-
-- **Policy Server**: Trusted component that defines compartmentalization
-- **LLVM Passes**: Trusted components running during compilation
-- **Kernel Integration**: Trusted component enforcing runtime security
-- **User Code**: Untrusted code being compartmentalized
-
-Vulnerabilities that break this trust model are especially critical.
 
 ## Acknowledgments
 
@@ -212,9 +68,9 @@ Security researchers who report valid vulnerabilities will be:
 **Subject line:** `[HAKC SECURITY] <brief description>`
 
 **For general questions:**
-- Contributing: See [CONTRIBUTING.md](CONTRIBUTING.md)
-- Maintainers: See [MAINTAINERS.md](MAINTAINERS.md)
-- Code of Conduct: See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+- Contributing: See [Contributing](contributing.md)
+- Maintainers: See the HAKC or MSV MAINTAINERS.md
+- Code of Conduct: See [Code of Conduct](code_of_conduct.md)
 
 ## Additional Resources
 
