@@ -8,11 +8,8 @@ If you discover a security vulnerability in HAKC, please report it privately to 
 
 ### How to Report
 
-**Email:** hakc@ll.mit.edu
-
-**Subject Line:** `[HAKC SECURITY] <brief description>`
-
-**Encryption:** PGP encryption is available upon request for sensitive reports.
+HAKC has enabled vulnerability reporting on the Github repo.  Please use that for reporting vulnerabilities.  Look to [this page](https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/report-privately) 
+for information on how to report privately.
 
 ### What to Include in Your Report
 
