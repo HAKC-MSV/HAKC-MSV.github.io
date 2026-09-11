@@ -32,7 +32,7 @@ pointers that can be removed from HAKC tracking.
 
 Currently, HAKC is reliant on extensions to LLVM (see [HAKC LLVM](https://github.com/HAKC-MSV/llvm-project)).
 However, we are planning to move over to a source-to-source compiler in 
-the next version (see [Roadmap](ROADMAP.md)).
+the next version (see [Roadmap](roadmap.md)).
 
 ## Projects
 
@@ -43,7 +43,7 @@ the next version (see [Roadmap](ROADMAP.md)).
 
 ## Getting Started
 
-See the [README](https://github.com/HAKC-MSV/HAKC) in the high-level HAKC repository.
+See the [README](https://github.com/HAKC-MSV/HAKC/README.md) in the high-level HAKC repository.
 
 ## Publications
 
@@ -51,13 +51,13 @@ See [Publications](publications.md).
 
 ## Contributing
 
-See [Contributing](CONTRIBUTING.md)
+See [Contributing](contributing.md)
 
 ## Security
 
-See [Security](SECURITY.md)
+See [Security](security.md)
 
 ## Code of Conduct
 
-See [Code of Conduct](CODE_OF_CONDUCT.md)
+See [Code of Conduct](code_of_conduct.md)
 
