@@ -20,8 +20,8 @@ Thank you for your interest in contributing to HAKC (Hardware-Assisted Kernel Co
 
 HAKC is a compartmentalization system for the Linux kernel using LLVM-based compiler transformations. Before contributing, please:
 
-1. Read the [README.md](README.md) for build instructions
-2. Review the documentation in [docs/](docs/)
+1. Read the [README.md](https://github.com/HAKC-MSV/HAKC/blob/main/README.md) for build instructions
+2. Review the documentation in [docs/](https://github.com/HAKC-MSV/HAKC/blob/main/docs)
 3. Set up your development environment:
    ```bash
    git submodule update --init --recursive
@@ -279,15 +279,15 @@ cmake --build $HAKC_BUILD_ROOT --target run-x86_64-hakc-kernel
 
 **Do NOT report security vulnerabilities via public GitHub issues.**
 
-See [SECURITY.md](SECURITY.md) for reporting security issues privately.
+See [Security](security.md) for reporting security issues privately.
 
 ### Email
 
-For questions about maintainership or project governance, see [MAINTAINERS.md](MAINTAINERS.md).
+For questions about maintainership or project governance, see the [HAKC](https://github.com/HAKC-MSV/HAKC/blob/main/MAINTAINERS.md) or MSV MAINTAINERS.md file.
 
 ## Code of Conduct
 
-All contributors are expected to follow our [Code of Conduct](CODE_OF_CONDUCT.md). Please read it before participating in the community.
+All contributors are expected to follow our [Code of Conduct](code_of_conduct.md). Please read it before participating in the community.
 
 Key principles:
 - Be respectful and inclusive
@@ -306,9 +306,9 @@ Thank you to all contributors who help improve HAKC!
 
 If you have questions about contributing:
 
-1. Check existing documentation in [docs/](docs/)
+1. Check existing documentation in `docs/`
 2. Search existing GitHub issues
 3. Open a new GitHub issue with your question
-4. Contact the maintainers (see [MAINTAINERS.md](MAINTAINERS.md))
+4. Contact the maintainers
 
 We appreciate your contributions and look forward to collaborating with you!
