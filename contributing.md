@@ -1,3 +1,7 @@
+---
+
+---
+
 # Contributing to HAKC
 
 Thank you for your interest in contributing to HAKC (Hardware-Assisted Kernel Compartmentalization)! This document provides guidelines for contributing to the project.
