@@ -1,6 +1,5 @@
 # HAKC Project Roadmap
 
-**Last Updated**: July 23, 2026  
 **Current Version**: Beta (LLVM-based)  
 **Target Release**: v1.0 (Transpiler-based) - January 2027 (6 months)
 
